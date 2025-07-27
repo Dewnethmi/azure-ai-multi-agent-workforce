@@ -32,7 +32,6 @@ The `<scope>` is optional, but recommended. It helps clarify which part of the p
 | Scope       | Description                                 |
 |-------------|---------------------------------------------|
 | repo        | Project-wide configuration or setup         |
-| basic-agent    | Changes related to the basic-agent sub directory    |
 | single-agent  | Changes related to the single-agent sub directory   |
 | multi-agent   | Changes related to the multi-agent sub directory  |
 
@@ -61,7 +60,7 @@ A concise summary of what the commit does.
 **Example:**
 
 ```md
-feat(basic-agent): Add agent tools (fixes #12)
+feat(single-agent): Add agent tools (fixes #12)
 
 This adds a responsive tools that connected to the external business API.
 ```
@@ -82,7 +81,7 @@ Use GitHub issue references to link commits to issues.
 #### Examples
 
 ```md
-fix(basic-agent): Validate user input (fixes #42)
+fix(single-agent): Validate user input (fixes #42)
 docs(repo): Update README structure (refs #17)
 ```
 
@@ -90,15 +89,15 @@ docs(repo): Update README structure (refs #17)
 
 | Purpose                | Example Commit Message                                         | Result                             |
 | ---------------------- | -------------------------------------------------------------- | ---------------------------------- |
-| Close single issue     | `fix(basic-agent: Update user input validation (fixes #12)`         | Links & closes issue #12           |
+| Close single issue     | `fix(single-agent: Update user input validation (fixes #12)`         | Links & closes issue #12           |
 | Reference single issue | `docs(repo): Update README structure (refs #34)`               | Links issue #34 only               |
-| Close multiple issues  | `feat(basic-agent): Add agent session endpoint (fixes #56, #57)` | Links & closes issues #56, #57     |
-| Reference multiple     | `refactor(basic-agent): Cleanup extra functionalities (refs #33, #38)`    | Links only                         |
+| Close multiple issues  | `feat(single-agent): Add agent session endpoint (fixes #56, #57)` | Links & closes issues #56, #57     |
+| Reference multiple     | `refactor(single-agent): Cleanup extra functionalities (refs #33, #38)`    | Links only                         |
 
 ## ✅ Summary Example with All Fields
 
 ```md
-feat(basic-agent): Add agent tools (fixes #12)
+feat(single-agent): Add agent tools (fixes #12)
 
 This adds a responsive tools that connected to the external business API.
 ```
