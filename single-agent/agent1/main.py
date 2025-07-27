@@ -25,18 +25,18 @@ if not MODEL_DEPLOYMENT_NAME:
     raise ValueError(
         "❌ MODEL_DEPLOYMENT_NAME environment variable is not set.")
 
-# Set up agent configuration
-print("🛠️ Setting up agent configuration...")
-agent_name: str = "my-agent-001"
-agent_description: str = "A general writing agent"
-agent_instructions: str = "You are a helpful writing assistant"
-
 # Create AI Project client
 print("🔗 Connecting to Azure AI Project...")
 project = AIProjectClient(
     endpoint=PROJECT_ENDPOINT,
     credential=DefaultAzureCredential(),
 )
+
+# Set up agent configuration
+print("🛠️ Setting up agent configuration...")
+agent_name: str = "my-agent-001"
+agent_description: str = "A general writing agent"
+agent_instructions: str = "You are a helpful writing assistant"
 
 # Create an agent
 print("🤖 Creating agent...")
