@@ -35,7 +35,8 @@ def create_fit_agent(project, model_name, diet_tool, workout_tool):
     Remember: You're the main point of contact for users. Make them feel supported on their wellness journey while leveraging your specialized sub-agents for expert advice.
     """
 
-    logging.info(f"🏋️ Creating main fit agent ({agent_name})...")
+    # logging.info(f"🏋️ Creating main fit agent ({agent_name})...")
+    print(f"🏋️ Creating main fit agent ({agent_name})...")
 
     try:
         # Combine tools from both sub-agents
@@ -49,9 +50,11 @@ def create_fit_agent(project, model_name, diet_tool, workout_tool):
             tools=all_tools,
         )
 
-        logging.info(f"✅ {agent_name} created: {agent.id}")
+        # logging.info(f"✅ {agent_name} created: {agent.id}")
+        print(f"✅ {agent_name} created: {agent.id}")
         return agent
 
     except Exception as e:
-        logging.error(f"❌ Failed to create main fit agent ({agent_name}): {e}")
+        # logging.error(f"❌ Failed to create main fit agent ({agent_name}): {e}")
+        print(f"❌ Failed to create main fit agent ({agent_name}): {e}")
         raise

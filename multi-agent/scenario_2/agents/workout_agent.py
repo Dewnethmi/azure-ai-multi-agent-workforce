@@ -43,7 +43,8 @@ def create_workout_agent(project, model_name):
     Always consider the user's fitness level, available time, equipment access, and any physical limitations when creating workout plans.
     """
 
-    logging.info(f"💪 Creating workout agent ({agent_name})...")
+    # logging.info(f"💪 Creating workout agent ({agent_name})...")
+    print(f"💪 Creating workout agent ({agent_name})...")
 
     try:
         agent = project.agents.create_agent(
@@ -53,7 +54,8 @@ def create_workout_agent(project, model_name):
             instructions=agent_instructions,
         )
 
-        logging.info(f"✅ {agent_name} created: {agent.id}")
+        # logging.info(f"✅ {agent_name} created: {agent.id}")
+        print(f"✅ {agent_name} created: {agent.id}")
 
         connected_tool = ConnectedAgentTool(
             id=agent.id,
@@ -61,9 +63,11 @@ def create_workout_agent(project, model_name):
             description="Provides personalized workout plans, exercise routines, and fitness guidance"
         )
 
-        logging.info(f"✅ {agent_name} connected to tools.")
+        # logging.info(f"✅ {agent_name} connected to tools.")
+        print(f"✅ {agent_name} connected to tools.")
         return agent, connected_tool
 
     except Exception as e:
-        logging.error(f"❌ Failed to create workout agent ({agent_name}): {e}")
+        # logging.error(f"❌ Failed to create workout agent ({agent_name}): {e}")
+        print(f"❌ Failed to create workout agent ({agent_name}): {e}")
         raise

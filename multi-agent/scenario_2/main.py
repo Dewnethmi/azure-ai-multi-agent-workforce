@@ -28,7 +28,8 @@ from core.conversation_manager import (
 
 def create_fitness_system(project, model_name):
     """Initialize the complete fitness advisor multi-agent system."""
-    print("\n 🏗️ Building Fitness & Wellness Advisor System...")
+    print("")
+    print("🏗️ Building Fitness & Wellness Advisor System...")
 
     # Create specialized sub-agents
     diet_agent, diet_tool = create_diet_agent(project, model_name)
@@ -101,7 +102,7 @@ def demo_session(project, fit_agent):
 def main():
     """Main application entry point."""
     try:
-        setup_logging()
+        # setup_logging()
         print("🚀 Starting Fitness & Wellness Advisor...")
 
         # Initialize Azure connection

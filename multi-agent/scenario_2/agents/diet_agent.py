@@ -31,7 +31,8 @@ def create_diet_agent(project, model_name):
     Always provide practical, evidence-based nutrition advice and create realistic meal plans that fit the user's lifestyle and goals.
     """
 
-    logging.info(f"🥗 Creating diet agent ({agent_name})...")
+    # logging.info(f"🥗 Creating diet agent ({agent_name})...")
+    print(f"🥗 Creating diet agent ({agent_name})...")
 
     try:
         agent = project.agents.create_agent(
@@ -41,7 +42,8 @@ def create_diet_agent(project, model_name):
             instructions=agent_instructions,
         )
 
-        logging.info(f"✅ {agent_name} created: {agent.id}")
+        # logging.info(f"✅ {agent_name} created: {agent.id}")
+        print(f"✅ {agent_name} created: {agent.id}")
 
         connected_tool = ConnectedAgentTool(
             id=agent.id,
@@ -49,9 +51,11 @@ def create_diet_agent(project, model_name):
             description="Provides personalized nutrition advice, meal plans, and dietary guidance"
         )
 
-        logging.info(f"✅ {agent_name} connected to tools.")
+        # logging.info(f"✅ {agent_name} connected to tools.")
+        print(f"✅ {agent_name} connected to tools.")
         return agent, connected_tool
 
     except Exception as e:
-        logging.error(f"❌ Failed to create diet agent ({agent_name}): {e}")
+        # logging.error(f"❌ Failed to create diet agent ({agent_name}): {e}")
+        print(f"❌ Failed to create diet agent ({agent_name}): {e}")
         raise
