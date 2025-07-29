@@ -82,7 +82,7 @@ def run_agent(project, thread, agent, poll_interval=2, timeout=60):
         TimeoutError: If the agent run does not complete within the timeout period
         Exception: If run initiation or polling fails
     """
-    print("🏃 Starting fitness advisor run...")
+    print("🏃 Starting inventory management run...")
 
     try:
         run = project.agents.runs.create(
@@ -109,7 +109,7 @@ def run_agent(project, thread, agent, poll_interval=2, timeout=60):
         return run
 
     except Exception as e:
-        print(f"💥 Failed to run fitness advisor: {e}")
+        print(f"💥 Failed to run inventory management: {e}")
         raise
 
 
