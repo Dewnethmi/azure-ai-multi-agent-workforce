@@ -1,0 +1,11 @@
+Transaction_ID,Date,Customer_ID,Region,Product_Category,Product,Units_Sold,Price_per_Unit,Total_Sales,Country,Customer_Segment
+1e4f8a33,2025-01-05,cust_001,West,Electronics,Smartphone,3,450,1350,USA,Returning
+a7d92c11,2025-01-06,cust_002,East,Clothing,T-Shirt,5,20,100,USA,New
+b3c48f5d,2025-01-07,cust_003,North,Home & Kitchen,Blender,2,70,140,Canada,VIP
+c5d23a44,2025-01-08,cust_004,South,Books,Fiction,1,15,15,UK,New
+d9e67b88,2025-01-09,cust_005,West,Sports,Yoga Mat,4,25,100,USA,Returning
+e1f34c22,2025-02-10,cust_006,East,Electronics,Headphones,2,150,300,UK,New
+f2a78d33,2025-02-11,cust_007,North,Beauty,Perfume,1,60,60,Germany,VIP
+a3b56e44,2025-02-12,cust_008,South,Toys,Action Figure,3,30,90,Canada,Returning
+c4d89f55,2025-03-01,cust_009,West,Furniture,Desk Chair,1,120,120,USA,Returning
+d5e90a66,2025-03-02,cust_010,East,Food,Snacks,10,5,50,France,New

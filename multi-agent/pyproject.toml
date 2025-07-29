@@ -8,5 +8,6 @@ dependencies = [
     "azure-ai-agents>=1.1.0b4",
     "azure-ai-projects>=1.0.0b12",
     "azure-identity>=1.24.0b1",
+    "jsonref>=1.1.0",
     "python-dotenv>=1.1.1",
 ]
