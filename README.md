@@ -164,6 +164,7 @@ Follow the instructions in the corresponding subdirectory’s `README.md` or usa
 - [What is Azure AI Foundry?](https://ai.azure.com/doc/azure/ai-foundry/what-is-azure-ai-foundry?tid=84c31ca0-ac3b-4eae-ad11-519d80233e6f)
 - [Create Azure for Students Account with a Voucher – Get $100 Free Credit](https://www.youtube.com/watch?v=bhMGtA7Q4XY)
 - [Create Azure Free Account – Get $200 Free Credit](https://www.youtube.com/watch?v=u7GFfv8KEaA&t=56s)
+- [Get started with Azure CLI](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)
 
 ## ⭐ Support the project
 
