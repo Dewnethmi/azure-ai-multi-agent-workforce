@@ -17,8 +17,8 @@ assignees: "dileepadev"
 <!-- [REQUIRED] List the specific objectives or goals of the feature. -->
 
 <!-- example:
-[ ] Improve user experience by adding a search function
-[ ] Enhance performance by optimizing the code
+- [ ] Improve user experience by adding a search function
+- [ ] Enhance performance by optimizing the code
 -->
 
 ### 🔗 Related Issues or PRs

@@ -30,7 +30,7 @@ These branches are open for contributions from all contributors. Follow these na
 
 Here are a few examples of valid branch names:
 
-- `feat/navbar` - New feature for the navbar.
+- `feat/user-auth` - Add user authentication feature.
 - `fix/login` - Bug fix for the login functionality.
 - `docs/readme` - Update to the README documentation.
 - `style/formatting` - Code style formatting changes.

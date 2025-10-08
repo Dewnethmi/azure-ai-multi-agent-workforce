@@ -27,7 +27,7 @@ The `<type>` field indicates the nature of the changes made in the commit. Use o
 
 ### `<scope>`
 
-The `<scope>` is optional, but recommended. It helps clarify which part of the project the commit affects. Use one of the following scopes:
+The `<scope>` is optional, but recommended. It helps clarify which part of the project the commit affects. For example:
 
 | Scope       | Description                                 |
 |-------------|---------------------------------------------|
