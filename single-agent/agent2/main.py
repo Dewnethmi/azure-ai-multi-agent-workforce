@@ -65,9 +65,20 @@ def create_agent(project_client, model_deployment_name):
     print("🤖 Creating a new agent...")
 
     try:
-        agent_name: str = "my-agent-002"
-        agent_description: str = "A general inventory management agent"
-        agent_instructions: str = "You are a helpful AI Agent that provides service to users about the company."
+        agent_name: str = "company-info-agent-001"
+
+        agent_description: str = (
+            "A smart company information assistant designed to provide users with all relevant "
+            "details about the company, including contact info, address, website, mission, vision, "
+            "values, privacy policy, and terms and conditions."
+        )
+
+        agent_instructions: str = (
+            "You are an expert assistant that provides company information. Answer user queries "
+            "about the company's details, mission, vision, values, contact info, and legal policies. "
+            "Always provide accurate, clear, and professional responses."
+        )
+
         agent_toolset = setup_toolset()
 
         project_client.agents.enable_auto_function_calls(agent_toolset)
