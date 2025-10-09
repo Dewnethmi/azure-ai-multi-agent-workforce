@@ -1,22 +1,22 @@
-# 🧠 Inventory Management Agent (`inventory-management-agent-001`)
+# 🧠 Company Information Agent (`company-info-agent-001`)
 
-The **Inventory Management Agent** is an intelligent AI-powered assistant built using **Azure AI Projects**.
-It demonstrates how to create, configure, and interact with a custom AI agent that can manage and provide insights about company inventory, stock levels, and related details using integrated function tools.
+The **Company Information Agent** is an intelligent AI-powered assistant built using **Azure AI Projects**.
+It demonstrates how to create, configure, and interact with a custom AI agent that provides comprehensive company details, including contact info, mission, vision, values, and legal policies, using integrated function tools.
 
 ## 🚀 Overview
 
-This project sets up and runs a **custom inventory management agent** using the `azure.ai.projects` SDK.
-Once deployed, the agent can assist users by retrieving company details, answering questions about inventory operations, and supporting decision-making related to product stock and availability.
+This project sets up and runs a **custom company information agent** using the `azure.ai.projects` SDK.
+Once deployed, the agent can assist users by retrieving company details and answering questions about the organization’s policies, goals, and general information.
 
 The agent configuration includes:
 
-* **Name:** `inventory-management-agent-001`
-* **Description:** An intelligent inventory management assistant for tracking and optimizing product stock.
-* **Instructions:** Guides the agent to provide accurate, clear, and professional responses about inventory data and company information.
+* **Name:** `company-info-agent-001`
+* **Description:** A smart AI assistant for providing company-related details to users.
+* **Instructions:** Guides the agent to provide accurate, clear, and professional responses about the company.
 
 ## 🧩 Features
 
-* Create or reuse an inventory management agent dynamically.
+* Create or reuse a company information agent dynamically.
 * Manage threaded conversations with persistent context.
 * Integrate user-defined Python tools (e.g., `get_company_details`) into the agent.
 * Automatically execute and handle tool calls using Azure function tools.
@@ -77,19 +77,18 @@ To exit the session, simply press **Enter**, type `exit`, or type `q`.
 ## 🧠 Agent Configuration
 
 ```python
-agent_name: str = "inventory-management-agent-001"
+agent_name: str = "company-info-agent-001"
 
 agent_description: str = (
-    "An intelligent inventory management assistant designed to help users track, manage, "
-    "and optimize product stock across various locations. It can provide insights, updates, "
-    "and support related to inventory levels, product availability, and restocking needs."
+    "A smart company information assistant designed to provide users with all relevant "
+    "details about the company, including contact info, address, website, mission, vision, "
+    "values, privacy policy, and terms and conditions."
 )
 
 agent_instructions: str = (
-    "You are an expert inventory management assistant. Help users monitor and manage "
-    "inventory efficiently by answering questions, providing stock information, generating summaries, "
-    "and offering recommendations. Always ensure accuracy and clarity in your responses, "
-    "and maintain a professional, supportive tone when assisting users."
+    "You are an expert assistant that provides company information. Answer user queries "
+    "about the company's details, mission, vision, values, contact info, and legal policies. "
+    "Always provide accurate, clear, and professional responses."
 )
 ```
 
@@ -131,8 +130,8 @@ delete_thread(project_client, thread)
 
 ## 🪄 Example Use Cases
 
-* Retrieve company and product information
-* Manage or summarize inventory stock data
-* Support queries about item availability
-* Automate responses to customer inquiries
-* Provide operational insights for warehouse teams
+* Retrieve company contact information
+* Access mission, vision, and core values
+* Provide legal policy details (privacy, terms)
+* Answer general questions about the organization
+* Support internal or external informational requests
