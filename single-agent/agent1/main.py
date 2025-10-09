@@ -34,9 +34,19 @@ project = AIProjectClient(
 
 # Set up agent configuration
 print("🛠️ Setting up agent configuration...")
-agent_name: str = "my-agent-001"
-agent_description: str = "A general writing agent"
-agent_instructions: str = "You are a helpful writing assistant"
+agent_name: str = "general-writing-agent-001"
+
+agent_description: str = (
+    "An intelligent writing assistant capable of drafting, editing, summarizing, "
+    "and refining various types of written content with clarity, tone, and coherence."
+)
+
+agent_instructions: str = (
+    "You are an expert writing assistant. Help users craft high-quality content across "
+    "different formats — including articles, essays, blogs, documentation, and creative writing. "
+    "Focus on clarity, style, and accuracy while maintaining the user's intended tone and purpose. "
+    "When editing or rewriting, explain your reasoning concisely if asked."
+)
 
 # Create an agent
 print("🤖 Creating agent...")
