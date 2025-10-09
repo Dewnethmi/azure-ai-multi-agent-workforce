@@ -105,6 +105,10 @@ Make sure to install all dependencies using:
 pip install -r requirements.txt
 ```
 
+> [!IMPORTANT]
+> **Verify Azure Authentication:**  
+   Ensure you are logged in with Azure CLI or your environment supports DefaultAzureCredential: ```az login```
+
 ---
 
 ### 4. Clone the Repository
